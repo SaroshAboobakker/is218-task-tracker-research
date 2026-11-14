@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task & Study Tracker | IS218</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Task Tracker</a>
+            <div class="nav-links">
+                <a href="#research">Research</a>
+                <a href="#concepts">Concepts</a>
+                <a href="#stories">User Stories</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#documents">Documents</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">IS218 · CREATIVE PROJECT</p>
+            <h1>Personal Task & Study Tracker</h1>
+            <p class="hero-text">
+                Exploring how a simple web application can help college
+                students organize assignments, manage deadlines, and track
+                their academic progress.
+            </p>
+            <a href="#research" class="button">Explore the Research</a>
+        </section>
+
+        <section class="section" id="research">
+            <p class="eyebrow">01 · RESEARCH QUESTION</p>
+            <h2>What Am I Trying to Understand?</h2>
+            <div class="content-card">
+                <p class="large-text">
+                    How can a small web application help college students
+                    organize coursework and study tasks while keeping each
+                    user's records private and secure?
+                </p>
+                <p>
+                    The intended audience is college students who want a
+                    better way to manage assignments, study sessions,
+                    and upcoming deadlines.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="concepts">
+            <p class="eyebrow">02 · CONCEPT COMPARISON</p>
+            <h2>Two Ideas I Considered</h2>
+
+            <div class="card-grid">
+                <article class="content-card">
+                    <h3>Private Group Chat</h3>
+                    <p>
+                        A private messaging website for four users to
+                        communicate and save conversations.
+                    </p>
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Keeping conversations private</li>
+                        <li>Saving messages correctly</li>
+                        <li>Supporting real-time messaging</li>
+                    </ul>
+                </article>
+
+                <article class="content-card featured-card">
+                    <span class="tag">Selected Concept</span>
+                    <h3>Task & Study Tracker</h3>
+                    <p>
+                        A website where students can create tasks,
+                        set deadlines, mark work as complete,
+                        and view their progress.
+                    </p>
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Connecting tasks to the correct user</li>
+                        <li>Protecting private information</li>
+                        <li>Organizing tasks in a useful dashboard</li>
+                    </ul>
+                </article>
+            </div>
+
+            <p class="section-note">
+                I selected the task tracker because it solves a practical
+                problem for students and gives me an opportunity to research
+                databases, user accounts, and application security.
+            </p>
+        </section>
+
+        <section class="section" id="stories">
+            <p class="eyebrow">03 · USER STORIES</p>
+            <h2>What Should the Website Do?</h2>
+
+            <div class="story-list">
+                <article class="content-card story">
+                    <span class="story-number">01</span>
+                    <div>
+                        <h3>Create an Account</h3>
+                        <p>
+                            As a student, I want to register and log in
+                            so I can access my personal tasks.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="content-card story">
+                    <span class="story-number">02</span>
+                    <div>
+                        <h3>Create Tasks</h3>
+                        <p>
+                            As a student, I want to add assignments
+                            and due dates so I can plan my work.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="content-card story">
+                    <span class="story-number">03</span>
+                    <div>
+                        <h3>Manage Tasks</h3>
+                        <p>
+                            As a student, I want to edit, complete,
+                            or delete tasks when my plans change.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="content-card story">
+                    <span class="story-number">04</span>
+                    <div>
+                        <h3>View Progress</h3>
+                        <p>
+                            As a student, I want a dashboard showing
+                            my tasks so I can understand my progress.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="content-card story">
+                    <span class="story-number">05</span>
+                    <div>
+                        <h3>Manage My Account</h3>
+                        <p>
+                            As a student, I want to manage my account
+                            and sign out to protect my information.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="technology">
+            <p class="eyebrow">04 · TECHNOLOGY</p>
+            <h2>Planned Technology Stack</h2>
+
+            <div class="card-grid">
+                <article class="content-card">
+                    <h3>HTML</h3>
+                    <p>Creates the structure and content of the website.</p>
+                </article>
+                <article class="content-card">
+                    <h3>CSS</h3>
+                    <p>Controls the website's layout, colors, and design.</p>
+                </article>
+                <article class="content-card">
+                    <h3>JavaScript</h3>
+                    <p>Adds interactive features and handles user actions.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Supabase Auth</h3>
+                    <p>Handles user registration and login.</p>
+                </article>
+                <article class="content-card">
+                    <h3>PostgreSQL</h3>
+                    <p>Stores task information in a database.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Row Level Security</h3>
+                    <p>Helps make sure users can only access their own records.</p>
+                </article>
+            </div>
+            <p class="section-note">
+                These technologies are planned for the application.
+                The working application has not been built yet.
+            </p>
+        </section>
+
+        <section class="section" id="architecture">
+            <p class="eyebrow">05 · APPLICATION DESIGN</p>
+            <h2>How the Application Could Work</h2>
+
+            <div class="content-card">
+                <div class="architecture">
+                    <div class="architecture-step">Student</div>
+                    <span>↓</span>
+                    <div class="architecture-step">Website Interface</div>
+                    <span>↓</span>
+                    <div class="architecture-step">Supabase Authentication</div>
+                    <span>↓</span>
+                    <div class="architecture-step">Task Repository</div>
+                    <span>↓</span>
+                    <div class="architecture-step">PostgreSQL Database</div>
+                    <span>↓</span>
+                    <div class="architecture-step">Row Level Security</div>
+                    <span>↓</span>
+                    <div class="architecture-step final-step">
+                        Private Task Dashboard
+                    </div>
+                </div>
+                <p class="section-note">
+                    This is a proposed design, not a completed application.
+                    Authentication identifies the user, while database
+                    security policies help protect that user's tasks.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="design-pattern">
+            <p class="eyebrow">06 · DESIGN PATTERN</p>
+            <h2>Repository Pattern</h2>
+
+            <div class="content-card">
+                <p>
+                    I plan to investigate the Repository Pattern.
+                    This approach separates database operations from
+                    the rest of the application.
+                </p>
+                <p>
+                    For example, the website could use a task repository
+                    to create, update, delete, and retrieve tasks instead
+                    of placing database code throughout the interface.
+                </p>
+                <p class="section-note">
+                    This pattern is being researched and has not yet
+                    been implemented.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="experiment">
+            <p class="eyebrow">07 · CREATIVE EXPERIMENT</p>
+            <h2>Testing Two Dashboard Designs</h2>
+
+            <div class="card-grid">
+                <article class="content-card">
+                    <h3>Basic Task List</h3>
+                    <p>
+                        A simple list showing assignments and whether
+                        they are complete.
+                    </p>
+                </article>
+                <article class="content-card">
+                    <h3>Priority & Deadline Dashboard</h3>
+                    <p>
+                        A dashboard that organizes tasks by priority,
+                        due date, and completion status.
+                    </p>
+                </article>
+            </div>
+            <p class="section-note">
+                My experiment will compare which design makes it easier
+                for students to understand what they should work on next.
+                This experiment is planned, not yet tested.
+            </p>
+        </section>
+
+        <section class="section" id="verification">
+            <p class="eyebrow">08 · RESEARCH & VERIFICATION</p>
+            <h2>How I Am Checking My Research</h2>
+
+            <div class="content-card">
+                <ul>
+                    <li>Review official Supabase authentication documentation.</li>
+                    <li>Research how database sessions work.</li>
+                    <li>Study Row Level Security policies.</li>
+                    <li>Separate confirmed facts from my own interpretations.</li>
+                    <li>Test the application after implementation.</li>
+                </ul>
+                <p class="section-note">
+                    Research sources and verification details are available
+                    in the project documents below.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="documents">
+            <p class="eyebrow">09 · PROJECT DOCUMENTS</p>
+            <h2>Explore the Research and Planning</h2>
+
+            <div class="card-grid">
+                <article class="content-card">
+                    <h3>Research Notes</h3>
+                    <p>
+                        Research question, source links, findings,
+                        facts, interpretations, and assumptions.
+                    </p>
+                    <a href="docs/research-notes.md">Read Research Notes →</a>
+                </article>
+
+                <article class="content-card">
+                    <h3>Project Plan</h3>
+                    <p>
+                        User stories, planned technologies, architecture,
+                        design pattern, and project roadmap.
+                    </p>
+                    <a href="docs/project-plan.md">Read Project Plan →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="related-work">
+            <p class="eyebrow">10 · RELATED WORK</p>
+            <h2>Other Research Projects</h2>
+
+            <div class="content-card">
+                <h3>Career Research Website</h3>
+                <p>
+                    My other IS218 research website explores careers
+                    involving artificial intelligence, software
+                    implementation, and data analytics.
+                </p>
+                <a href="https://saroshaboobakker.github.io/career-research-site/"
+                   target="_blank" rel="noopener noreferrer">
+                    Visit Career Research →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>IS218 Creative Project · Personal Task & Study Tracker</p>
+        <p>Research and planning in progress.</p>
+    </footer>
+
+</body>
+</html>
+
