@@ -1,9 +1,8 @@
-
 # Personal Task & Study Tracker
 
 ## IS218 Creative Project
 
-A research and planning project exploring how a web application can help college students organize assignments, manage deadlines, and track academic progress.
+A web application project exploring how college students can organize assignments, manage deadlines, and track academic progress.
 
 ## Research Question
 
@@ -11,17 +10,15 @@ How can a small web application help college students organize coursework and st
 
 ## Project Overview
 
-The goal is to plan a task management website where students can:
+The goal is to build a task management website where students can:
 
 - Create an account and log in.
 - Add assignments and due dates.
-- Edit, complete, and delete tasks.
-- View their academic progress through a dashboard.
+- View saved tasks in a dashboard.
 - Keep their task information private.
+- Eventually edit, complete, and delete tasks.
 
-This repository currently contains the research and planning for the project. The working application has not been built yet.
-
-## Planned Technology
+## Technology
 
 | Technology | Purpose |
 |---|---|
@@ -32,6 +29,43 @@ This repository currently contains the research and planning for the project. Th
 | PostgreSQL | Store task information |
 | Row Level Security | Protect users' private records |
 
+## Current Implementation
+
+The initial application is located in the `app` folder.
+
+Current features include:
+
+- Account registration and sign-in forms.
+- A dark-themed task dashboard.
+- A task creation form with an optional due date.
+- A task list that retrieves records from Supabase.
+- A TaskRepository class that organizes database operations.
+- A sign-out button.
+- A Supabase tasks table with Row Level Security policies.
+
+## Running the Application Locally
+
+1. Clone this repository.
+2. Open the `app` folder in Terminal.
+3. Make sure `config.js` contains the Supabase project URL and public publishable key.
+4. Start a local server:
+
+   `python3 -m http.server 8000`
+
+5. Open `http://localhost:8000` in your browser.
+
+Do not place a Supabase service-role key or other secret keys in public JavaScript files.
+
+## Testing Status
+
+The application successfully loaded through a local development server, and the JavaScript syntax check passed.
+
+Account registration was attempted but returned a Supabase `email rate limit exceeded` error. Successful authentication, task persistence, reopening saved tasks, and access restrictions have not yet been verified.
+
+Task editing, deletion, completion, and classmate peer review remain future work.
+
+See [Project Plan](docs/project-plan.md) for the detailed implementation and verification record.
+
 ## Project Documents
 
 - [Research Notes](docs/research-notes.md)
@@ -39,15 +73,13 @@ This repository currently contains the research and planning for the project. Th
 
 ## Design and Architecture
 
-The proposed application will use authentication, a task repository, and a PostgreSQL database.
+The application uses a TaskRepository class to separate database operations from the rest of the application.
 
-Row Level Security will help ensure that users can only access their own task records.
-
-The Repository Pattern will also be researched as a way to separate database operations from the rest of the application.
+Row Level Security policies are configured to restrict task records to their authenticated owners.
 
 ## Creative Experiment
 
-I plan to compare two dashboard designs:
+The original design experiment compares two dashboard concepts:
 
 1. A basic task list.
 2. A priority and deadline dashboard.
@@ -62,15 +94,12 @@ The goal is to understand which design helps students decide what to work on nex
 
 ## Project Website
 
-The website will be published using GitHub Pages.
+The research website is intended to be published using GitHub Pages.
 
 ## AI Assistance
 
-AI tools were used to help organize research, explain technical concepts, plan the project structure, and assist with website code. Research claims and implementation details should be checked against the original sources.
+ChatGPT helped brainstorm project ideas, organize research, explain technical concepts, and assist with application code. Technical decisions and application behavior will be checked through documentation and testing.
 
 ## Current Status
 
-**Research and planning in progress.**
-
-The website and planning documents have been created. Application development, testing, and peer review are still planned.
-
+The project has moved from research and planning into initial application development. The first application structure and database configuration are in place. The complete sign-in-to-saved-result workflow still needs to be tested.
