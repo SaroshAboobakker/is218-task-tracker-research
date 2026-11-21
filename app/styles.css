@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #60a5fa;
+    font-size: 36px;
+}
+
+p {
+    color: #9ca3af;
+}
+
+.auth-box {
+    background: #1f2937;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #4b5563;
+    border-radius: 6px;
+    background: #111827;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+
+#dashboard {
+    margin-top: 30px;
+}
+
+#task-form {
+    background: #1f2937;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+#task-list .auth-box {
+    text-align: left;
+}
+
+#task-list h3 {
+    margin-top: 0;
+    color: #60a5fa;
+}
+
+#logout-button {
+    margin-top: 25px;
+    background: #dc2626;
+}
+
+#logout-button:hover {
+    background: #b91c1c;
+}
