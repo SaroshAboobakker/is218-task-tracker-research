@@ -244,7 +244,33 @@ I will verify technical decisions against official documentation and test the ap
 
 ## 13. Current Project Status
 
-The research website and initial planning documents are being created.
+### Completed
 
-The application itself has not been built. Authentication, database operations, security policies, and dashboard interactions remain planned work.
+- Created the initial HTML, CSS, and JavaScript application.
+- Added account registration and sign-in forms.
+- Created a dark-themed task dashboard.
+- Added a task creation form and task list.
+- Implemented a TaskRepository class to organize database operations.
+- Connected the application to the Supabase project using its public publishable key.
+- Created the tasks database table and configured Row Level Security policies.
+- Added sign-out functionality.
+- Committed and pushed the initial application to GitHub.
 
+### Verification
+
+- Confirmed that the application opens through a local development server.
+- Ran `node --check app.js` successfully to check JavaScript syntax.
+- Confirmed that the expected application elements and functions are present.
+- Attempted account registration, but Supabase returned an `email rate limit exceeded` error.
+
+### Not Yet Verified
+
+- Successful account registration and sign-in.
+- Creating a task and saving it to Supabase.
+- Reopening the application and confirming the task remains saved.
+- Signing out and signing back in.
+- Confirming that one user cannot access another user's tasks.
+- Task editing, deletion, and completion.
+- Classmate peer review and feedback.
+
+The application has an initial implementation, but the complete sign-in-to-saved-result workflow has not yet been verified. These remaining checks will be documented as they are completed.
